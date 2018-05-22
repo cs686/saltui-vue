@@ -1,0 +1,76 @@
+/**
+ * ActionSheet Component Style for tingle
+ * @author 
+ *
+ * Copyright 2014-2016, Tingle Team.
+ * All rights reserved.
+ */
+
+__actionSheetPrefixCls = t-action-sheet
+
+.{__actionSheetPrefixCls}-panel
+    background $basic-100
+.{__actionSheetPrefixCls}-share-panel
+    background $normal-alpha-8
+.{__actionSheetPrefixCls}-panel-message,
+.{__actionSheetPrefixCls}-share-panel-message
+    color $dark-alpha-3
+    padding 16px
+    text-align center
+    line-height 22px
+// .{__actionSheetPrefixCls}-panel-title,
+// .{__actionSheetPrefixCls}-share-panel-title
+//     font-weight bold
+.{__actionSheetPrefixCls}-panel-item,
+.{__actionSheetPrefixCls}-share-panel-item-cancel
+    height 48px
+    line-height 48px
+    text-align center
+    color $normal-alpha-3
+    hairline border-top $normal-alpha-7
+    font-size 17px
+    background $basic-100
+    &.hover
+        background $normal-alpha-9
+    &.{__actionSheetPrefixCls}-panel-item-destructive
+        color #F03118
+.{__actionSheetPrefixCls}-panel-item-split
+    height 12px
+    background $normal-alpha-8
+.{__actionSheetPrefixCls}-panel .{__actionSheetPrefixCls}-panel-item-cancel,
+.{__actionSheetPrefixCls}-share-panel .{__actionSheetPrefixCls}-share-panel-item-cancel
+    border-top none
+.{__actionSheetPrefixCls}-share-panel-message
+    hairline border-bottom $normal-alpha-7
+.{__actionSheetPrefixCls}-share-panel-content
+    padding 8px 0
+.{__actionSheetPrefixCls}-share-panel-item-list-wrapper
+    overflow auto
+.{__actionSheetPrefixCls}-share-panel-item-list
+    display inline-block
+    white-space nowrap
+    min-width 100%
+    padding 0 8px
+.{__actionSheetPrefixCls}-share-panel-item
+    display inline-block
+    padding 10px 6px
+    width 72px
+.{__actionSheetPrefixCls}-share-panel-item-icon   
+    width 60px
+    height 60px
+    background $basic-100
+    border-radius 6px
+    margin-bottom 10px
+    > img,
+    > .t-icon
+        display inline-block
+        width 40px
+        height 40px
+        margin 10px
+ .{__actionSheetPrefixCls}-share-panel-item-title
+    width 60px
+    text-align center
+    color $normal-alpha-3
+    font-size 12px
+    overflow hidden
+    text-overflow ellipsis
